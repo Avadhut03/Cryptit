@@ -2,14 +2,21 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/Avadhut03/Cryptit/decrypt"
-	"github.com/Avadhut03/Cryptit/encrypt"
+	"strings"
 )
 
 func main(){
-	encrypted:=encrypt.Nimbus("Avadhut")
-	fmt.Println("Encrypted String:",encrypted)
-	fmt.Println(decrypt.Nimbus(encrypted))
+	learning := "learning standard library in go "
+	fun:= "library in go"
+	result:= strings.Contains(learning, fun)
+	fmt.Println(result)
+	// fmt.Println(strings.Count(learning, "go") )
+	ans:= strings.ReplaceAll(learning,fun,"library in python")
+	fmt.Println(ans)
+
+
+
+		
+
 
 }

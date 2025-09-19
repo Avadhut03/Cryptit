@@ -1,4 +1,6 @@
+//encrypt package consist of all the algorithms used for decryption
 package encrypt
+//encrypt by reducing ascii value by 4
 
 func Nimbus(str string) string{
 	encrypted:=""
